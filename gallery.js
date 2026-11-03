@@ -67,6 +67,10 @@ function fitRect(img) {
   return { left: (window.innerWidth - w) / 2, top: (window.innerHeight - h) / 2 - 36, width: w, height: h };
 }
 
+function placeCaption(r) {
+  viewerCaption.style.top = r.top + r.height + 16 + "px"; // just under the painting
+}
+
 function setRect(el, r) {
   Object.assign(el.style, { left: r.left + "px", top: r.top + "px", width: r.width + "px", height: r.height + "px" });
 }
@@ -93,6 +97,7 @@ function openViewer(img, art) {
   viewerImg.style.transition = "none";
   setRect(viewerImg, to);
   setRect(viewerDesc, to);
+  placeCaption(to);
   placeAt(from, to);
   viewerImg.style.visibility = "visible";
   img.style.visibility = "hidden";
@@ -141,6 +146,7 @@ window.addEventListener("resize", () => {
     const to = fitRect(source);
     setRect(viewerImg, to);
     setRect(viewerDesc, to);
+    placeCaption(to);
   }
 });
 window.addEventListener("scroll", () => { if (source) closeViewer(); }, { passive: true });
