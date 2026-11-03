@@ -23,7 +23,11 @@ REPLACE = {  # use a better photo of the same work
 }
 ORDER = [  # first names in display order; anyone not listed goes at the end
     "Moses", "Grace", "Nandini", "Finlay",
-    "Sophia", "Branka", "Harley", "Ivan",
+    "Irina", "Branka", "Harley", "Ivan",
+    "Margaret", "Viktoriia", "Jerry", "Zoe",
+    "Sienna", "Aitana", "Lam", "Ellie",
+    "Kyara", "Mahjabin", "Sophia", "Eva",
+    "Iyaan", "Milena",
 ]
 ROTATE_CCW = {  # degrees counterclockwise
     "b5647069-498a-4f38-b50c-39c8b14a54b1.pdf": 90,  # Viktoriia

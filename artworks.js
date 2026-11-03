@@ -33,12 +33,12 @@ const ARTWORKS = [
     "h": 2000
   },
   {
-    "image": "sophia.jpg",
-    "name": "Sophia",
-    "age": 11,
-    "title": "Little House",
+    "image": "irina.jpg",
+    "name": "Irina",
+    "age": 12,
+    "title": "One Sky, One Breath, One Future",
     "w": 2000,
-    "h": 1525
+    "h": 1500
   },
   {
     "image": "branka.jpg",
@@ -145,12 +145,12 @@ const ARTWORKS = [
     "h": 1157
   },
   {
-    "image": "irina.jpg",
-    "name": "Irina",
-    "age": 12,
-    "title": "One Sky, One Breath, One Future",
+    "image": "sophia.jpg",
+    "name": "Sophia",
+    "age": 11,
+    "title": "Little House",
     "w": 2000,
-    "h": 1500
+    "h": 1525
   },
   {
     "image": "eva.jpg",
