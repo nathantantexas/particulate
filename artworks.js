@@ -25,20 +25,20 @@ const ARTWORKS = [
     "h": 2000
   },
   {
-    "image": "finlay.jpg",
-    "name": "Finlay",
-    "age": 15,
-    "title": "THE STANDARD FOR CLEAN AIR",
-    "w": 1125,
-    "h": 2000
-  },
-  {
     "image": "irina.jpg",
     "name": "Irina",
     "age": 12,
     "title": "One Sky, One Breath, One Future",
     "w": 2000,
     "h": 1500
+  },
+  {
+    "image": "finlay.jpg",
+    "name": "Finlay",
+    "age": 15,
+    "title": "THE STANDARD FOR CLEAN AIR",
+    "w": 1125,
+    "h": 2000
   },
   {
     "image": "branka.jpg",

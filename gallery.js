@@ -3,12 +3,16 @@ const viewer = document.getElementById("viewer");
 const viewerImg = document.getElementById("viewer-img");
 const viewerCaption = document.getElementById("viewer-caption");
 const finePointer = matchMedia("(hover: hover) and (pointer: fine)").matches;
+const TOP_ROW = 3; // featured pieces hung alone on the first row
 
 function escapeHtml(s) {
   return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 }
 
-ARTWORKS.forEach(art => {
+const walls = [document.createElement("div"), document.createElement("div")];
+walls.forEach(w => { w.className = "wall"; gallery.appendChild(w); });
+
+ARTWORKS.forEach((art, i) => {
   const piece = document.createElement("figure");
   piece.className = "piece";
   piece.style.setProperty("--ratio", (art.w / art.h).toFixed(4));
@@ -43,7 +47,7 @@ ARTWORKS.forEach(art => {
   }
 
   button.addEventListener("click", () => openViewer(img, art));
-  gallery.appendChild(piece);
+  walls[i < TOP_ROW ? 0 : 1].appendChild(piece);
 });
 
 // Full screen: the image grows from its place on the wall to fill the screen

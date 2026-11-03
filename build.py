@@ -22,8 +22,8 @@ REPLACE = {  # use a better photo of the same work
     "0286539c-619d-4358-87f9-ff80756df186.jpg": os.path.expanduser("~/Downloads/IMG_2611.jpg"),  # Moses
 }
 ORDER = [  # first names in display order; anyone not listed goes at the end
-    "Moses", "Grace", "Nandini", "Finlay",
-    "Irina", "Branka", "Harley", "Ivan",
+    "Moses", "Grace", "Nandini",
+    "Irina", "Finlay", "Branka", "Harley", "Ivan",
     "Margaret", "Viktoriia", "Jerry", "Zoe",
     "Sienna", "Aitana", "Lam", "Ellie",
     "Kyara", "Mahjabin", "Sophia", "Eva",
