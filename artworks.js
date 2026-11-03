@@ -5,6 +5,7 @@ const ARTWORKS = [
     "name": "Moses",
     "age": 16,
     "title": "A Beam Of A Green Future",
+    "statement": "This is an original artwork made by I, Moses, from Kenya and it reflects climate action which is what i've always wanted to champion for since i've seen its adverse effects on our earth. The artwork was done in watercolors and colored pencils. I believe that my artwork will one day help resolve such issues such as climate change. A brief description of my work; The artwork entails a girl in a polluted environment holding a spotlight which shines its Beam revealing a brighter and better world where the environment is cared for through use of renewable energy such as solar panels on house roofs. Thank you for this opportunity.",
     "w": 2000,
     "h": 1590
   },
@@ -13,6 +14,7 @@ const ARTWORKS = [
     "name": "Grace",
     "age": 12,
     "title": "Painting Tomorrow",
+    "statement": "",
     "w": 2000,
     "h": 1509
   },
@@ -21,6 +23,7 @@ const ARTWORKS = [
     "name": "Nandini",
     "age": 13,
     "title": "Two Breaths",
+    "statement": "Every breath is a choice. In this piece, a woman holds the Earth while her lungs reveal two futures: one choked by smog, stumps, and skyscrapers, the other alive with trees, flowers, and clean sky. The air we breathe connects us to the planet, and what we do to one, we do to the other. Her calm expression shows that hope remains. By choosing renewable energy, protecting forests, and caring for our world, we decide which breath we take next.",
     "w": 1395,
     "h": 2000
   },
@@ -29,6 +32,7 @@ const ARTWORKS = [
     "name": "Irina",
     "age": 12,
     "title": "One Sky, One Breath, One Future",
+    "statement": "The sky belongs to everyone, and so does the air we breathe. My painting shows two different worlds: one where pollution threatens nature and life, and another where rivers flow clean, birds fly freely, and animals live in harmony with people.\n\nThe mother and child planting a young tree symbolize hope, care, and responsibility for the future. I believe that protecting the air and our environment is not just a choice, but a shared responsibility. We all share one sky, one breath, and one planet.",
     "w": 2000,
     "h": 1500
   },
@@ -37,6 +41,7 @@ const ARTWORKS = [
     "name": "Finlay",
     "age": 15,
     "title": "The Standard for Clean Air",
+    "statement": "Digital artwork - I find I truly experience fresh air when I am out hiking in the rockies. Something about waking up to crisp mountain air really reminds me of how good it can get and how low our standard for clean air has become.",
     "w": 1125,
     "h": 2000
   },
@@ -45,6 +50,7 @@ const ARTWORKS = [
     "name": "Branka",
     "age": 15,
     "title": "To purify is to live",
+    "statement": "",
     "w": 1461,
     "h": 2000
   },
@@ -53,6 +59,7 @@ const ARTWORKS = [
     "name": "Harley",
     "age": 17,
     "title": "The Resilient Pulse",
+    "statement": "I created this artwork with all my heart depicting an actual anatomical heart made of stone with touch of nature including grass, flowers, and butterflies in the middle of a war the world experiences. Despite the conflict, a dove snapping its wings freely symbolizes hope and universal right to clean such polluted air. By contrasting light and dark, emphasizing a healthy environment requires a global peace together with unity. It serves as a reminder that the atmosphere everyone is blessed with, and restoring our shared air begins with nurturing life where it was once lost.",
     "w": 1500,
     "h": 2000
   },
@@ -61,6 +68,7 @@ const ARTWORKS = [
     "name": "Ivan",
     "age": 9,
     "title": "The Air We Breathe",
+    "statement": "In my painting, I have depicted a world where nature lives in harmony. A gentle breeze carries dandelion seeds, birds fly over green meadows, a river flows, and an orange cat enjoys the fresh air. All living things are connected, and everyone needs clean air and a healthy environment.",
     "w": 2000,
     "h": 1387
   },
@@ -69,6 +77,7 @@ const ARTWORKS = [
     "name": "Margaret",
     "age": 14,
     "title": "The Resonance of New Connections: When the Lotus Begins to Sing",
+    "statement": "A healthy environment is one in which people and nature can thrive together. In this work, water, a blooming lotus, butterflies, mountains, and the modern city share one interconnected world. Golden lines flow through the painting like an invisible resonance, connecting people, ecosystems, and the air we all share. As a flutist, I think of clean air not only as something we need to breathe, but as part of what connects every living thing. Like individual notes becoming harmony, I imagine a future in which human progress and nature can exist in balance.",
     "w": 1750,
     "h": 2000
   },
@@ -77,6 +86,7 @@ const ARTWORKS = [
     "name": "Viktoriia",
     "age": 13,
     "title": "One planet. Two lungs. One choice.",
+    "statement": "Our planet is like a pair of lungs. One side is filled with pollution, smoke, and dying nature, while the other is full of fresh air, colorful flowers, and life.\n\nThrough my artwork, I wanted to show how air pollution affects both our environment and our health. The contrast between the two lungs represents two possible futures.\n\nWe all share the same air, but we have the power to choose what kind of world we want to breathe in.",
     "w": 2000,
     "h": 1546
   },
@@ -85,6 +95,7 @@ const ARTWORKS = [
     "name": "Jerry",
     "age": 11,
     "title": "Seattle, dirty or clean?",
+    "statement": "In my picture, one half has grey, smoky sky, air pollution, dead trees and questionable energy sources. The other half has clean air, lush trees, wind turbines and electric vehicles which represent renewable energy sources. I want to show the clear contrast and encourage people to choose sustainable energy solutions to protect the environment.",
     "w": 2000,
     "h": 1462
   },
@@ -93,6 +104,7 @@ const ARTWORKS = [
     "name": "Sienna",
     "age": 14,
     "title": "A View Worth Fighting For",
+    "statement": "My painting represents the beauty of the natural world and the importance of protecting the air we breathe. It shows a young boy looking out his window at the fresh green fields, beautiful mountains, and clear blue sky. The window represents the connection between our homes and the environment beyond them. Sometimes we take clean air, open skies, and green spaces for granted, but they are essential to our health, happiness, and future. Through this painting, I want to remind people that a healthy environment is something everyone deserves. The world outside our windows is precious, and it is our responsibility to protect it for future generations.",
     "w": 1546,
     "h": 2000
   },
@@ -101,6 +113,7 @@ const ARTWORKS = [
     "name": "Zoe",
     "age": 12,
     "title": "Breath of fresh air",
+    "statement": "",
     "w": 2000,
     "h": 1415
   },
@@ -109,6 +122,7 @@ const ARTWORKS = [
     "name": "Aitana",
     "age": 13,
     "title": "The Air We Share",
+    "statement": "In this drawing, I wanted to show four different places around the world: a big city, the mountains, the sea and the countryside. These places are very different, but they all share the same air. I drew a person in each place to show that, no matter where we live, we all need clean air. Everyone deserves to breathe clean air, so we have to take care of it. Even the smallest good action can make a difference in ways we cannot see. And when someone pollutes the environment, it can affect people everywhere, both now and in the future.",
     "w": 2000,
     "h": 1500
   },
@@ -117,6 +131,7 @@ const ARTWORKS = [
     "name": "Lam",
     "age": 8,
     "title": "TheCityInsideTheGreenLungs",
+    "statement": "I imagine a city where a big tree grows in the middle, with a giant lung inside its trunk. The tree makes clean air for everyone who lives around it. Houses are built on its branches, and people live together with birds, insects, and other animals. I think a healthy city should not only have tall buildings and busy roads. It should also have trees and fresh air. My painting is a reminder that when we take care of trees, they take care of us too",
     "w": 1414,
     "h": 2000
   },
@@ -125,6 +140,7 @@ const ARTWORKS = [
     "name": "Ellie",
     "age": 8,
     "title": "My imagination of a healthy environment",
+    "statement": "I believe that we should all help to keep our community clean and well provisioned. In the center of the picture, two girls are planting and watering a sapling which will grow into a huge tree in the future. In the back is a safe city, with mountains stretching way into the clouds and waterfalls leading to beautiful lakes surrounded by lush forest. This is what I long for a clean environment - let’s all make it happen!",
     "w": 2000,
     "h": 1467
   },
@@ -133,6 +149,7 @@ const ARTWORKS = [
     "name": "Kyara",
     "age": 18,
     "title": "A place to live.",
+    "statement": "As an artist who hopes for a future where our kids can go outside, see the beauty of nature and grow up in a safe, healthy and green environment drawing this was a patch for the heart.",
     "w": 2000,
     "h": 2000
   },
@@ -141,6 +158,7 @@ const ARTWORKS = [
     "name": "Mahjabin",
     "age": 19,
     "title": "Shared Air, Stolen time",
+    "statement": "",
     "w": 1170,
     "h": 1157
   },
@@ -149,6 +167,7 @@ const ARTWORKS = [
     "name": "Sophia",
     "age": 11,
     "title": "Little House",
+    "statement": "My painting shows a house surrounded by green fields, trees, and a wide, open sky. Clean air helps keep this place healthy for the people, plants, and animals that live here. We all share the same air, so protecting it means caring for everyone’s home.",
     "w": 2000,
     "h": 1525
   },
@@ -157,6 +176,7 @@ const ARTWORKS = [
     "name": "Eva",
     "age": 16,
     "title": "Hold your breath",
+    "statement": "The lady at the center of the painting symbolizes a pure and selfless love for the environment. Her hands are consumed by darkness, representing the unknown future of humanity, to which we choose to turn a blind eye. Yet, in defiance of this, she offers hope. The chaotic details in the background represent, in a coded way, the polluted air surrounding her; though it is present everywhere, it cannot overcome her innate strength.",
     "w": 950,
     "h": 1280
   },
@@ -165,6 +185,7 @@ const ARTWORKS = [
     "name": "Iyaan",
     "age": 10,
     "title": "A Greener Cleaner Kenya",
+    "statement": "",
     "w": 2000,
     "h": 1983
   },
@@ -173,6 +194,7 @@ const ARTWORKS = [
     "name": "Milena",
     "age": 13,
     "title": "The Emerald Valley",
+    "statement": "The artwork “The Emerald Valley” shows drones flying over green forests and rivers. They symbolize air pollution and the danger to nature. I imagine the path to clean air through reducing harmful emissions, restoring the environment, and protecting forests.",
     "w": 890,
     "h": 1280
   }

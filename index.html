@@ -25,12 +25,16 @@
 <main id="gallery" aria-label="Artworks"></main>
 
 <footer>
-  Learn more at <a href="https://sharedskiesinitiative.org/art-gallery">sharedskiesinitiative.org/art-gallery</a>
+  Learn more at <a class="link" href="https://sharedskiesinitiative.org/art-gallery">sharedskiesinitiative.org/art-gallery</a>
 </footer>
 
 <div id="viewer" aria-hidden="true">
   <img id="viewer-img" alt="">
-  <p id="viewer-caption"></p>
+  <div id="viewer-desc"><div id="viewer-desc-text"></div></div>
+  <div id="viewer-caption">
+    <p id="viewer-label"></p>
+    <button type="button" id="desc-toggle" class="link" aria-controls="viewer-desc" aria-expanded="false">Read description</button>
+  </div>
 </div>
 
 <script src="artworks.js"></script>

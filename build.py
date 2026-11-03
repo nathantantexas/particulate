@@ -63,6 +63,17 @@ def clean_title(title):
     return title
 
 
+def clean_statement(row, first):
+    text = row["artist_statement"].strip()
+    # Keep to first names only, even inside the artist's own words
+    initial = row["last_initial"].strip()
+    if initial:
+        text = re.sub(rf"\b{re.escape(first)}\s+{re.escape(initial)}\.?,?\s*", first + ", ", text)
+    text = re.sub(r"\s*[—–]\s*", ", ", text)  # long dashes become commas
+    paragraphs = [" ".join(p.split()) for p in re.split(r"\n\s*", text) if p.strip()]
+    return "\n\n".join(paragraphs)
+
+
 def main(csv_path, pieces_dir):
     with open(csv_path, encoding="utf-8-sig") as f:
         rows = {os.path.basename(r["artwork_path"]).lower(): r
@@ -95,6 +106,7 @@ def main(csv_path, pieces_dir):
             "name": first,
             "age": int(row["age"]),
             "title": clean_title(row["title"]),
+            "statement": clean_statement(row, first),
             "w": img.width,
             "h": img.height,
         })
