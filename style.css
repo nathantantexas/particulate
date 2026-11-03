@@ -49,7 +49,22 @@ footer {
   color: #444;
 }
 
-footer a, footer a:visited, footer a:hover { color: #444; text-underline-offset: 3px; }
+footer a, footer a:visited, footer a:hover {
+  color: #444;
+  text-decoration: none;
+  padding-bottom: 2px;
+  background: linear-gradient(currentColor, currentColor) left bottom / 100% 1px no-repeat;
+}
+
+/* On hover the underline slides off to the right and redraws from the left */
+footer a:hover, footer a:focus-visible { animation: sweep 0.7s cubic-bezier(.6, 0, .2, 1); }
+
+@keyframes sweep {
+  0%     { background-size: 100% 1px; background-position: right bottom; }
+  45%    { background-size: 0 1px;    background-position: right bottom; }
+  45.01% { background-size: 0 1px;    background-position: left bottom; }
+  100%   { background-size: 100% 1px; background-position: left bottom; }
+}
 
 /* The featured top row is its own wall, followed by the rest */
 .wall {
@@ -158,4 +173,5 @@ footer a, footer a:visited, footer a:hover { color: #444; text-underline-offset:
 
 @media (prefers-reduced-motion: reduce) {
   .piece button, #viewer, #viewer-img { transition: none; }
+  footer a:hover, footer a:focus-visible { animation: none; }
 }
