@@ -9,9 +9,9 @@ body {
 }
 
 header {
-  max-width: 640px;
+  max-width: 980px;
   margin: 0 auto;
-  padding: 96px 24px 64px;
+  padding: 64px 24px 40px;
   text-align: center;
 }
 
@@ -19,7 +19,7 @@ h1 {
   font-weight: 400;
   font-size: clamp(2rem, 5vw, 3.1rem);
   letter-spacing: 0.01em;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 header p {
@@ -31,12 +31,12 @@ header p {
 
 /* Gallery wall: every piece hung at the same height, evenly spaced, rows centered */
 #gallery {
-  --hang: 340px;
+  --hang: 250px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  gap: 96px 88px;
+  gap: 64px 56px;
   max-width: 1440px;
   margin: 0 auto;
   padding: 40px 48px 160px;
@@ -126,7 +126,7 @@ header p {
 #viewer.open #viewer-caption { opacity: 1; transition-delay: 0.25s; }
 
 @media (max-width: 1000px) {
-  #gallery { --hang: 260px; gap: 72px 56px; }
+  #gallery { --hang: 200px; gap: 56px 40px; }
 }
 
 @media (max-width: 700px) {
