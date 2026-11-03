@@ -62,7 +62,7 @@ def main(csv_path, pieces_dir):
             "image": out + ".jpg",
             "name": first,
             "age": int(row["age"]),
-            "title": row["title"].strip(),
+            "title": row["title"].strip().strip("«»\"'").strip(),
             "w": img.width,
             "h": img.height,
         })

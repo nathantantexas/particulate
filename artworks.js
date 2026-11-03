@@ -156,7 +156,7 @@ const ARTWORKS = [
     "image": "eva.jpg",
     "name": "Eva",
     "age": 16,
-    "title": "«Hold your breath»",
+    "title": "Hold your breath",
     "w": 950,
     "h": 1280
   },
