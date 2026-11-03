@@ -24,8 +24,8 @@ REPLACE = {  # use a better photo of the same work
 ORDER = [  # first names in display order; anyone not listed goes at the end
     "Moses", "Grace", "Nandini",
     "Irina", "Finlay", "Branka", "Harley", "Ivan",
-    "Margaret", "Viktoriia", "Jerry", "Zoe",
-    "Sienna", "Aitana", "Lam", "Ellie",
+    "Margaret", "Viktoriia", "Jerry", "Sienna",
+    "Zoe", "Aitana", "Lam", "Ellie",
     "Kyara", "Mahjabin", "Sophia", "Eva",
     "Iyaan", "Milena",
 ]

@@ -89,20 +89,20 @@ const ARTWORKS = [
     "h": 1462
   },
   {
-    "image": "zoe.jpg",
-    "name": "Zoe",
-    "age": 12,
-    "title": "Breath of fresh air",
-    "w": 2000,
-    "h": 1415
-  },
-  {
     "image": "sienna.jpg",
     "name": "Sienna",
     "age": 14,
     "title": "A View Worth Fighting For",
     "w": 1546,
     "h": 2000
+  },
+  {
+    "image": "zoe.jpg",
+    "name": "Zoe",
+    "age": 12,
+    "title": "Breath of fresh air",
+    "w": 2000,
+    "h": 1415
   },
   {
     "image": "aitana.jpg",
