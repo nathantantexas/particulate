@@ -52,6 +52,17 @@ def load(path):
     return img.convert("RGB")
 
 
+SMALL_WORDS = {"a", "an", "and", "as", "at", "but", "by", "for", "in", "of", "on", "or", "the", "to"}
+
+
+def clean_title(title):
+    title = title.strip().strip("«»\"'").strip()
+    if title.isupper():  # titles typed in all caps become title case
+        words = title.lower().split()
+        title = " ".join(w if i and w in SMALL_WORDS else w.capitalize() for i, w in enumerate(words))
+    return title
+
+
 def main(csv_path, pieces_dir):
     with open(csv_path, encoding="utf-8-sig") as f:
         rows = {os.path.basename(r["artwork_path"]).lower(): r
@@ -83,7 +94,7 @@ def main(csv_path, pieces_dir):
             "image": out + ".jpg",
             "name": first,
             "age": int(row["age"]),
-            "title": row["title"].strip().strip("«»\"'").strip(),
+            "title": clean_title(row["title"]),
             "w": img.width,
             "h": img.height,
         })

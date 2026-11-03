@@ -36,7 +36,7 @@ const ARTWORKS = [
     "image": "finlay.jpg",
     "name": "Finlay",
     "age": 15,
-    "title": "THE STANDARD FOR CLEAN AIR",
+    "title": "The Standard for Clean Air",
     "w": 1125,
     "h": 2000
   },
@@ -108,7 +108,7 @@ const ARTWORKS = [
     "image": "aitana.jpg",
     "name": "Aitana",
     "age": 13,
-    "title": "THE AIR WE SHARE",
+    "title": "The Air We Share",
     "w": 2000,
     "h": 1500
   },
