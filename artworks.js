@@ -6,7 +6,7 @@ const ARTWORKS = [
     "age": 16,
     "title": "A Beam Of A Green Future",
     "w": 2000,
-    "h": 1500
+    "h": 1590
   },
   {
     "image": "sophia.jpg",
@@ -77,8 +77,8 @@ const ARTWORKS = [
     "name": "Viktoriia",
     "age": 13,
     "title": "One planet. Two lungs. One choice.",
-    "w": 1546,
-    "h": 2000
+    "w": 2000,
+    "h": 1546
   },
   {
     "image": "jerry.jpg",
@@ -93,8 +93,8 @@ const ARTWORKS = [
     "name": "Zoe",
     "age": 12,
     "title": "Breath of fresh air",
-    "w": 1415,
-    "h": 2000
+    "w": 2000,
+    "h": 1415
   },
   {
     "image": "sienna.jpg",

@@ -12,9 +12,19 @@ import re
 import sys
 
 import fitz
-from PIL import Image, ImageOps
+from PIL import Image, ImageEnhance, ImageOps
 
 MAX_SIDE = 2000
+SATURATION = 1.2  # 1.0 leaves colors as submitted
+
+# Per-piece fixes, keyed by the submission file name in the pieces folder
+REPLACE = {  # use a better photo of the same work
+    "0286539c-619d-4358-87f9-ff80756df186.jpg": os.path.expanduser("~/Downloads/IMG_2611.jpg"),  # Moses
+}
+ROTATE_CCW = {  # degrees counterclockwise
+    "b5647069-498a-4f38-b50c-39c8b14a54b1.pdf": 90,  # Viktoriia
+    "ce6f2999-fb4e-4710-8198-ebd1048e4b63.pdf": 90,  # Zoe
+}
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "images")
 
@@ -55,8 +65,11 @@ def main(csv_path, pieces_dir):
             out, n = f"{slug}-{n}", n + 1
         used.add(out)
 
-        img = load(os.path.join(pieces_dir, name))
+        img = load(REPLACE.get(name, os.path.join(pieces_dir, name)))
+        if name in ROTATE_CCW:
+            img = img.rotate(ROTATE_CCW[name], expand=True)
         img.thumbnail((MAX_SIDE, MAX_SIDE), Image.LANCZOS)
+        img = ImageEnhance.Color(img).enhance(SATURATION)
         img.save(os.path.join(OUT, out + ".jpg"), "JPEG", quality=85, optimize=True, progressive=True)
         art.append({
             "image": out + ".jpg",
