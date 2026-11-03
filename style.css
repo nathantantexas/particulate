@@ -39,14 +39,17 @@ header p {
 }
 
 footer {
-  padding: 0 16px 48px;
+  display: flex;
+  justify-content: center;
+  gap: 0.3em;
+  flex-wrap: wrap;
+  padding: 0 16px 120px;
   text-align: center;
   font-size: 0.9rem;
-  color: #888;
+  color: #444;
 }
 
-footer a { color: inherit; text-underline-offset: 3px; }
-footer a:hover { color: #111; }
+footer a, footer a:visited, footer a:hover { color: #444; text-underline-offset: 3px; }
 
 /* The featured top row is its own wall, followed by the rest */
 .wall {
