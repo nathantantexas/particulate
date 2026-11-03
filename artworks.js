@@ -9,12 +9,12 @@ const ARTWORKS = [
     "h": 1590
   },
   {
-    "image": "sophia.jpg",
-    "name": "Sophia",
-    "age": 11,
-    "title": "Little House",
+    "image": "grace.jpg",
+    "name": "Grace",
+    "age": 12,
+    "title": "Painting Tomorrow",
     "w": 2000,
-    "h": 1525
+    "h": 1509
   },
   {
     "image": "nandini.jpg",
@@ -22,14 +22,6 @@ const ARTWORKS = [
     "age": 13,
     "title": "Two Breaths",
     "w": 1395,
-    "h": 2000
-  },
-  {
-    "image": "branka.jpg",
-    "name": "Branka",
-    "age": 15,
-    "title": "To purify is to live",
-    "w": 1461,
     "h": 2000
   },
   {
@@ -41,12 +33,20 @@ const ARTWORKS = [
     "h": 2000
   },
   {
-    "image": "grace.jpg",
-    "name": "Grace",
-    "age": 12,
-    "title": "Painting Tomorrow",
+    "image": "sophia.jpg",
+    "name": "Sophia",
+    "age": 11,
+    "title": "Little House",
     "w": 2000,
-    "h": 1509
+    "h": 1525
+  },
+  {
+    "image": "branka.jpg",
+    "name": "Branka",
+    "age": 15,
+    "title": "To purify is to live",
+    "w": 1461,
+    "h": 2000
   },
   {
     "image": "harley.jpg",
