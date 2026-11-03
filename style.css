@@ -29,26 +29,22 @@ header p {
   margin-bottom: 14px;
 }
 
-/* Collage: pieces dealt into the shortest column, each sized, nudged and tilted a little */
+/* Gallery wall: every piece hung at the same height, evenly spaced, rows centered */
 #gallery {
+  --hang: 340px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: flex-start;
-  gap: 64px;
-  max-width: 1320px;
+  gap: 96px 88px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 24px 48px 120px;
+  padding: 40px 48px 160px;
 }
 
-.column { flex: 1; min-width: 0; }
-.column:nth-child(2) { padding-top: 90px; }
-.column:nth-child(4) { padding-top: 40px; }
-
 .piece {
-  width: var(--w, 100%);
-  margin: 0 0 80px;
-  margin-left: var(--ml, 0);
-  perspective: 900px;
-  transform: translate(var(--dx, 0), var(--dy, 0)) rotate(var(--rot, 0deg));
+  width: calc(var(--hang) * var(--ratio));
+  perspective: 1000px;
 }
 
 .piece button {
@@ -80,14 +76,16 @@ header p {
   height: auto;
 }
 
-.caption {
-  margin-top: 14px;
-  text-align: center;
-  font-size: 1.05rem;
+/* Museum wall label */
+.label {
+  margin-top: 18px;
+  font-size: 0.98rem;
+  line-height: 1.35;
   color: #222;
 }
 
-.caption span { color: #777; }
+.label span { display: block; }
+.label .title { font-style: italic; color: #777; }
 
 /* Full screen viewer */
 #viewer {
@@ -127,11 +125,14 @@ header p {
 
 #viewer.open #viewer-caption { opacity: 1; transition-delay: 0.25s; }
 
+@media (max-width: 1000px) {
+  #gallery { --hang: 260px; gap: 72px 56px; }
+}
+
 @media (max-width: 700px) {
   header { padding: 64px 16px 40px; }
-  #gallery { padding: 8px 16px 80px; gap: 20px; }
-  .column:nth-child(2) { padding-top: 48px; }
-  .piece { margin-bottom: 48px; }
+  #gallery { padding: 8px 16px 80px; gap: 64px; }
+  .piece { width: min(100%, calc(70vh * var(--ratio))); }
 }
 
 @media (prefers-reduced-motion: reduce) {
